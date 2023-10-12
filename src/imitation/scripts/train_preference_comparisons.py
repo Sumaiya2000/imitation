@@ -13,16 +13,16 @@ import torch as th
 from sacred.observers import FileStorageObserver
 from stable_baselines3.common import type_aliases
 
-import imitation.data.serialize as data_serialize
-import imitation.policies.serialize as policies_serialize
-from imitation.algorithms import preference_comparisons
-from imitation.scripts.config.train_preference_comparisons import (
+import imitation.src.imitation.data.serialize as data_serialize
+import imitation.src.imitation.policies.serialize as policies_serialize
+from imitation.src.imitation.algorithms import preference_comparisons
+from imitation.src.imitation.scripts.config.train_preference_comparisons import (
     train_preference_comparisons_ex,
 )
-from imitation.scripts.ingredients import environment
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.scripts.ingredients import policy_evaluation, reward
-from imitation.scripts.ingredients import rl as rl_common
+from imitation.src.imitation.scripts.ingredients import environment
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.scripts.ingredients import policy_evaluation, reward
+from imitation.src.imitation.scripts.ingredients import rl as rl_common
 
 
 def save_model(
