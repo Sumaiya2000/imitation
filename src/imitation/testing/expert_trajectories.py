@@ -13,10 +13,10 @@ import numpy as np
 from filelock import FileLock
 from torch.utils import data as th_data
 
-import imitation.data.serialize as data_serialize
-import imitation.policies.serialize as policies_serialize
-from imitation.data import rollout, types, wrappers
-from imitation.util import util
+import imitation.src.imitation.data.serialize as data_serialize
+import imitation.src.imitation.policies.serialize as policies_serialize
+from imitation.src.imitation.data import rollout, types, wrappers
+from imitation.src.imitation.util import util
 
 
 def generate_expert_trajectories(
