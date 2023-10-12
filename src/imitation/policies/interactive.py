@@ -10,8 +10,8 @@ import numpy as np
 from shimmy import atari_env
 from stable_baselines3.common import vec_env
 
-import imitation.policies.base as base_policies
-from imitation.util import util
+import imitation.src.imitation.policies.base as base_policies
+from imitation.src.imitation.util import util
 
 
 class DiscreteInteractivePolicy(base_policies.NonTrainablePolicy, abc.ABC):
