@@ -18,10 +18,10 @@ from stable_baselines3.common import (
 from stable_baselines3.sac import policies as sac_policies
 from torch.nn import functional as F
 
-from imitation.algorithms import base
-from imitation.data import buffer, rollout, types, wrappers
-from imitation.rewards import reward_nets, reward_wrapper
-from imitation.util import logger, networks, util
+from imitation.src.imitation.algorithms import base
+from imitation.src.imitation.data import buffer, rollout, types, wrappers
+from imitation.src.imitation.rewards import reward_nets, reward_wrapper
+from imitation.src.imitation.util import logger, networks, util
 
 
 def compute_train_stats(
