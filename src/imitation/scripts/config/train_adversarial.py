@@ -4,10 +4,10 @@ import pathlib
 
 import sacred
 
-from imitation.rewards import reward_nets
-from imitation.scripts.ingredients import demonstrations, environment, expert
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.scripts.ingredients import policy_evaluation, reward, rl
+from imitation.src.imitation.rewards import reward_nets
+from imitation.src.imitation.scripts.ingredients import demonstrations, environment, expert
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.scripts.ingredients import policy_evaluation, reward, rl
 
 # Note: All the hyperparameter configs in the file are of the tuned
 # hyperparameters of the RL algorithm of the respective environment.
