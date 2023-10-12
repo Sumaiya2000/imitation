@@ -17,11 +17,11 @@ from stable_baselines3.common import (
     vec_env,
 )
 
-from imitation.policies import serialize
-from imitation.policies.replay_buffer_wrapper import ReplayBufferRewardWrapper
-from imitation.rewards.reward_function import RewardFn
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.scripts.ingredients.policy import policy_ingredient
+from imitation.src.imitation.policies import serialize
+from imitation.src.imitation.policies.replay_buffer_wrapper import ReplayBufferRewardWrapper
+from imitation.src.imitation.rewards.reward_function import RewardFn
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.scripts.ingredients.policy import policy_ingredient
 
 rl_ingredient = sacred.Ingredient(
     "rl",
