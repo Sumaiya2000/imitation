@@ -2,8 +2,8 @@
 import sacred
 from stable_baselines3 import dqn as dqn_algorithm
 
-from imitation.policies import base
-from imitation.scripts.ingredients import policy, rl
+from imitation.src.imitation.policies import base
+from imitation.src.imitation.scripts.ingredients import policy, rl
 
 sqil_ingredient = sacred.Ingredient(
     "sqil",
