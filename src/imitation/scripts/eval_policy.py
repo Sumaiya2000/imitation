@@ -10,14 +10,14 @@ import numpy as np
 from sacred.observers import FileStorageObserver
 from stable_baselines3.common.vec_env import VecEnvWrapper
 
-from imitation.data import rollout, serialize
-from imitation.policies.exploration_wrapper import ExplorationWrapper
-from imitation.rewards import reward_wrapper
-from imitation.rewards.serialize import load_reward
-from imitation.scripts.config.eval_policy import eval_policy_ex
-from imitation.scripts.ingredients import environment, expert
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.util import video_wrapper
+from imitation.src.imitation.data import rollout, serialize
+from imitation.src.imitation.policies.exploration_wrapper import ExplorationWrapper
+from imitation.src.imitation.rewards import reward_wrapper
+from imitation.src.imitation.rewards.serialize import load_reward
+from imitation.src.imitation.scripts.config.eval_policy import eval_policy_ex
+from imitation.src.imitation.scripts.ingredients import environment, expert
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.util import video_wrapper
 
 
 class InteractiveRender(VecEnvWrapper):
