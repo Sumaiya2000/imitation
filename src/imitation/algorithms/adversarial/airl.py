@@ -5,9 +5,9 @@ import torch as th
 from stable_baselines3.common import base_class, policies, vec_env
 from stable_baselines3.sac import policies as sac_policies
 
-from imitation.algorithms import base
-from imitation.algorithms.adversarial import common
-from imitation.rewards import reward_nets
+from imitation.src.imitation.algorithms import base
+from imitation.src.imitation.algorithms.adversarial import common
+from imitation.src.imitation.rewards import reward_nets
 
 STOCHASTIC_POLICIES = (sac_policies.SACPolicy, policies.ActorCriticPolicy)
 
