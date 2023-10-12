@@ -6,8 +6,8 @@ import numpy as np
 import sacred
 from stable_baselines3.common import vec_env
 
-from imitation.data import wrappers
-from imitation.util import util
+from imitation.src.imitation.data import wrappers
+from imitation.src.imitation.util import util
 
 environment_ingredient = sacred.Ingredient("environment")
 
