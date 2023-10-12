@@ -8,8 +8,8 @@ from stable_baselines3.common import callbacks
 from stable_baselines3.common import logger as sb_logger
 from stable_baselines3.common import vec_env
 
-from imitation.data import types
-from imitation.rewards import reward_function
+from imitation.src.imitation.data import types
+from imitation.src.imitation.rewards import reward_function
 
 
 class WrappedRewardCallback(callbacks.BaseCallback):
