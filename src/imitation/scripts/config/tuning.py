@@ -4,8 +4,8 @@ import ray.tune as tune
 import sacred
 from torch import nn
 
-from imitation.algorithms import dagger as dagger_alg
-from imitation.scripts.parallel import parallel_ex
+from imitation.src.imitation.algorithms import dagger as dagger_alg
+from imitation.src.imitation.scripts.parallel import parallel_ex
 
 tuning_ex = sacred.Experiment("tuning", ingredients=[parallel_ex])
 
