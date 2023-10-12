@@ -6,9 +6,9 @@ from typing import Any, Mapping, Type
 import sacred
 from stable_baselines3.common import policies, utils, vec_env
 
-import imitation.util.networks
-from imitation.policies import base
-from imitation.scripts.ingredients import logging as logging_ingredient
+import imitation.src.imitation.util.networks
+from imitation.src.imitation.policies import base
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
 
 policy_ingredient = sacred.Ingredient(
     "policy",
