@@ -10,8 +10,8 @@ import sacred
 import sacred.observers
 import sacred.run
 
-from imitation.data import types
-from imitation.util import util
+from imitation.src.imitation.data import types
+from imitation.src.imitation.util import util
 
 
 class SacredDicts(NamedTuple):
