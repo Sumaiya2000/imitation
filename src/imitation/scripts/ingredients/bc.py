@@ -9,9 +9,9 @@ import sacred
 import torch as th
 from stable_baselines3.common import vec_env
 
-from imitation.algorithms import bc
-from imitation.data import types
-from imitation.scripts.ingredients import policy
+from imitation.src.imitation.algorithms import bc
+from imitation.src.imitation.data import types
+from imitation.src.imitation.scripts.ingredients import policy
 
 bc_ingredient = sacred.Ingredient("bc", ingredients=[policy.policy_ingredient])
 
