@@ -7,7 +7,7 @@ import numpy as np
 import numpy.typing as npt
 from stable_baselines3.common.vec_env import VecEnv, VecEnvWrapper
 
-from imitation.data import rollout, types
+from imitation.src.imitation.data import rollout, types
 
 
 class BufferingWrapper(VecEnvWrapper):
