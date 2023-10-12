@@ -12,8 +12,8 @@ extension (i.e. "A.pkl" -> "A/", "A.npz" -> "A/", "A/" -> "A/", "A.foo" -> "A/")
 import pathlib
 import warnings
 
-from imitation.data import huggingface_utils, serialize, types
-from imitation.util import util
+from imitation.src.imitation.data import huggingface_utils, serialize, types
+from imitation.src.imitation.util import util
 
 
 def update_traj_file_in_place(path_str: types.AnyPath, /) -> pathlib.Path:
