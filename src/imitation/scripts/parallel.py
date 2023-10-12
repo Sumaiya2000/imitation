@@ -12,7 +12,7 @@ from ray.tune import search
 from ray.tune.search import optuna
 from sacred.observers import FileStorageObserver
 
-from imitation.scripts.config.parallel import parallel_ex
+from imitation.src.imitation.scripts.config.parallel import parallel_ex
 
 
 @parallel_ex.main
