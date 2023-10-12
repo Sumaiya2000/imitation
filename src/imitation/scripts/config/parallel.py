@@ -15,7 +15,7 @@ import numpy as np
 import ray.tune as tune
 import sacred
 
-from imitation.util.util import make_unique_timestamp
+from imitation.src.imitation.util.util import make_unique_timestamp
 
 parallel_ex = sacred.Experiment("parallel")
 
