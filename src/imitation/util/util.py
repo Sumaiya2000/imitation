@@ -28,7 +28,7 @@ import torch as th
 from stable_baselines3.common import monitor, policies
 from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv, VecEnv
 
-from imitation.data.types import AnyPath
+from imitation.src.imitation.data.types import AnyPath
 
 
 def save_policy(policy: policies.BasePolicy, policy_path: AnyPath) -> None:
