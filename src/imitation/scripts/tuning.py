@@ -10,8 +10,8 @@ from pandas.api import types as pd_types
 from ray.tune.search import optuna
 from sacred.observers import FileStorageObserver
 
-from imitation.scripts.config.parallel import parallel_ex
-from imitation.scripts.config.tuning import tuning_ex
+from imitation.src.imitation.scripts.config.parallel import parallel_ex
+from imitation.src.imitation.scripts.config.tuning import tuning_ex
 
 
 @tuning_ex.main
