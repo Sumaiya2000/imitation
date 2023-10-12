@@ -10,7 +10,7 @@ from gymnasium import spaces
 from stable_baselines3.common import preprocessing
 from torch import nn
 
-from imitation.util import networks, util
+from imitation.src.imitation.util import networks, util
 
 
 class RewardNet(nn.Module, abc.ABC):
