@@ -10,8 +10,8 @@ from typing import Callable, Type, TypeVar
 import huggingface_sb3 as hfsb3
 from stable_baselines3.common import base_class, callbacks, policies, vec_env
 
-from imitation.policies import base
-from imitation.util import registry, util
+from imitation.src.imitation.policies import base
+from imitation.src.imitation.util import registry, util
 
 Algorithm = TypeVar("Algorithm", bound=base_class.BaseAlgorithm)
 
