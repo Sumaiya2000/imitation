@@ -9,15 +9,15 @@ import sacred.commands
 import torch as th
 from sacred.observers import FileStorageObserver
 
-from imitation.algorithms.adversarial import airl as airl_algo
-from imitation.algorithms.adversarial import common
-from imitation.algorithms.adversarial import gail as gail_algo
-from imitation.data import rollout
-from imitation.policies import serialize
-from imitation.scripts.config.train_adversarial import train_adversarial_ex
-from imitation.scripts.ingredients import demonstrations, environment
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.scripts.ingredients import policy_evaluation, reward, rl
+from imitation.src.imitation.algorithms.adversarial import airl as airl_algo
+from imitation.src.imitation.algorithms.adversarial import common
+from imitation.src.imitation.algorithms.adversarial import gail as gail_algo
+from imitation.src.imitation.data import rollout
+from imitation.src.imitation.policies import serialize
+from imitation.src.imitation.scripts.config.train_adversarial import train_adversarial_ex
+from imitation.src.imitation.scripts.ingredients import demonstrations, environment
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.scripts.ingredients import policy_evaluation, reward, rl
 
 logger = logging.getLogger("imitation.scripts.train_adversarial")
 
