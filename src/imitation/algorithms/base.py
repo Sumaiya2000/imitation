@@ -16,9 +16,9 @@ from typing import (
 import torch.utils.data as th_data
 from stable_baselines3.common import policies
 
-from imitation.data import rollout, types
-from imitation.util import logger as imit_logger
-from imitation.util import util
+from imitation.src.imitation.data import rollout, types
+from imitation.src.imitation.util import logger as imit_logger
+from imitation.src.imitation.util import util
 
 
 class BaseImitationAlgorithm(abc.ABC):
