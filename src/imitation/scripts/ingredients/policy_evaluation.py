@@ -10,7 +10,7 @@ import numpy as np
 import sacred
 from stable_baselines3.common import base_class, policies, vec_env
 
-from imitation.data import rollout
+from imitation.src.imitation.data import rollout
 
 policy_evaluation_ingredient = sacred.Ingredient("policy_evaluation")
 
