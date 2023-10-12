@@ -12,10 +12,10 @@ from typing import Any, Callable, Iterable, List, Mapping, Optional, Sequence, S
 import pandas as pd
 from sacred.observers import FileStorageObserver
 
-import imitation.util.sacred as sacred_util
-from imitation.scripts.config.analyze import analysis_ex
-from imitation.util import util
-from imitation.util.sacred import dict_get_nested as get
+import imitation.src.imitation.util.sacred as sacred_util
+from imitation.src.imitation.scripts.config.analyze import analysis_ex
+from imitation.src.imitation.util import util
+from imitation.src.imitation.util.sacred import dict_get_nested as get
 
 
 @analysis_ex.capture
