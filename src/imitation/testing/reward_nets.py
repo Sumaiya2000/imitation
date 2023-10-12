@@ -3,7 +3,7 @@
 import gymnasium as gym
 import torch as th
 
-from imitation.rewards import reward_nets
+from imitation.src.imitation.rewards import reward_nets
 
 
 def make_ensemble(
