@@ -12,9 +12,9 @@ import huggingface_sb3 as hfsb3
 import numpy as np
 import sacred
 
-from imitation.data import huggingface_utils, rollout, serialize, types
-from imitation.scripts.ingredients import environment, expert
-from imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.data import huggingface_utils, rollout, serialize, types
+from imitation.src.imitation.scripts.ingredients import environment, expert
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
 
 demonstrations_ingredient = sacred.Ingredient(
     "demonstrations",
