@@ -7,8 +7,8 @@ from gymnasium import spaces
 from stable_baselines3.common.buffers import ReplayBuffer
 from stable_baselines3.common.type_aliases import ReplayBufferSamples
 
-from imitation.rewards.reward_function import RewardFn
-from imitation.util import util
+from imitation.src.imitation.rewards.reward_function import RewardFn
+from imitation.src.imitation.util import util
 
 
 def _samples_to_reward_fn_input(
