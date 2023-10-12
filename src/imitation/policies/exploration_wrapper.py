@@ -5,8 +5,8 @@ from typing import Dict, Optional, Tuple, Union
 import numpy as np
 from stable_baselines3.common import vec_env
 
-from imitation.data import rollout
-from imitation.util import util
+from imitation.src.imitation.data import rollout
+from imitation.src.imitation.util import util
 
 
 class ExplorationWrapper:
