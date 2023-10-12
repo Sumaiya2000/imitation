@@ -6,8 +6,8 @@ import numpy as np
 import torch as th
 from stable_baselines3.common.vec_env import VecEnv
 
-from imitation.rewards import reward_function, reward_nets
-from imitation.util import registry, util
+from imitation.src.imitation.rewards import reward_function, reward_nets
+from imitation.src.imitation.util import registry, util
 
 # TODO(sam): I suspect this whole file can be replaced with th.load calls. Try
 # that refactoring once I have things running.
