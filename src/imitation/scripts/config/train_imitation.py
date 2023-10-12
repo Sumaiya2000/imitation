@@ -4,11 +4,11 @@ import pathlib
 
 import sacred
 
-from imitation.scripts.ingredients import bc
-from imitation.scripts.ingredients import demonstrations as demos_common
-from imitation.scripts.ingredients import environment, expert
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.scripts.ingredients import policy_evaluation, sqil
+from imitation.src.imitation.scripts.ingredients import bc
+from imitation.src.imitation.scripts.ingredients import demonstrations as demos_common
+from imitation.src.imitation.scripts.ingredients import environment, expert
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.scripts.ingredients import policy_evaluation, sqil
 
 train_imitation_ex = sacred.Experiment(
     "train_imitation",
