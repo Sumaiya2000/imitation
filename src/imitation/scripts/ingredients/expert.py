@@ -16,8 +16,8 @@ The supported policy types are:
 """
 import sacred
 
-from imitation.policies import serialize
-from imitation.scripts.ingredients import environment
+from imitation.src.imitation.policies import serialize
+from imitation.src.imitation.scripts.ingredients import environment
 
 expert_ingredient = sacred.Ingredient(
     "expert",
