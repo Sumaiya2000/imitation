@@ -8,15 +8,15 @@ from typing import Any, Dict, Mapping, Optional, Sequence, cast
 import numpy as np
 from sacred.observers import FileStorageObserver
 
-from imitation.algorithms import dagger as dagger_algorithm
-from imitation.algorithms import sqil as sqil_algorithm
-from imitation.data import rollout, types
-from imitation.scripts.config.train_imitation import train_imitation_ex
-from imitation.scripts.ingredients import bc as bc_ingredient
-from imitation.scripts.ingredients import demonstrations, environment, expert
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.scripts.ingredients import policy_evaluation
-from imitation.util import util
+from imitation.src.imitation.algorithms import dagger as dagger_algorithm
+from imitation.src.imitation.algorithms import sqil as sqil_algorithm
+from imitation.src.imitation.data import rollout, types
+from imitation.src.imitation.scripts.config.train_imitation import train_imitation_ex
+from imitation.src.imitation.scripts.ingredients import bc as bc_ingredient
+from imitation.src.imitation.scripts.ingredients import demonstrations, environment, expert
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.scripts.ingredients import policy_evaluation
+from imitation.src.imitation.util import util
 
 logger = logging.getLogger(__name__)
 
