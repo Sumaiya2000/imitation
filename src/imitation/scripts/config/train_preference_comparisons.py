@@ -3,10 +3,10 @@
 import sacred
 from torch import nn
 
-from imitation.algorithms import preference_comparisons
-from imitation.scripts.ingredients import environment
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.scripts.ingredients import policy_evaluation, reward, rl
+from imitation.src.imitation.algorithms import preference_comparisons
+from imitation.src.imitation.scripts.ingredients import environment
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.scripts.ingredients import policy_evaluation, reward, rl
 
 # Note: All the hyperparameter configs in the file are of the tuned
 # hyperparameters of the RL algorithm of the respective environment.
