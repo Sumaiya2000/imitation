@@ -7,8 +7,8 @@ from typing import Any, Mapping, Optional, Type
 import sacred
 from stable_baselines3.common import vec_env
 
-from imitation.rewards import reward_nets
-from imitation.util import networks
+from imitation.src.imitation.rewards import reward_nets
+from imitation.src.imitation.util import networks
 
 reward_ingredient = sacred.Ingredient("reward")
 logger = logging.getLogger(__name__)
