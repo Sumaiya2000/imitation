@@ -5,7 +5,7 @@ from typing import Any, Mapping, Optional, Tuple
 import numpy as np
 from stable_baselines3.common import vec_env
 
-from imitation.data import types
+from imitation.src.imitation.data import types
 
 
 def num_samples(data: Mapping[Any, np.ndarray]) -> int:
