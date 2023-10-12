@@ -450,7 +450,7 @@ class AdversarialTrainer(base.DemonstrationAlgorithm[types.Transitions]):
             f"{self.gen_train_timesteps} timesteps, have only "
             f"total_timesteps={total_timesteps})!"
         )
-        for r in tqdm.tqdm(range(0, n_rounds), desc="round"):
+        for r in tqdm.tqdm(range(0, int(n_rounds)), desc="round"):
             self.train_gen(self.gen_train_timesteps)
             for _ in range(self.n_disc_updates_per_round):
                 with networks.training(self.reward_train):
