@@ -10,8 +10,8 @@ from typing import Any, Dict, Generator, List, Optional, Sequence, Tuple
 
 import stable_baselines3.common.logger as sb_logger
 
-from imitation.data import types
-from imitation.util import util
+from imitation.src.imitation.data import types
+from imitation.src.imitation.util import util
 
 
 def make_output_format(
