@@ -18,15 +18,15 @@ from sacred.observers import FileStorageObserver
 from stable_baselines3.common import callbacks
 from stable_baselines3.common.vec_env import VecNormalize
 
-import imitation.data.serialize as data_serialize
-import imitation.policies.serialize as policies_serialize
-from imitation.data import rollout, wrappers
-from imitation.rewards.reward_wrapper import RewardVecEnvWrapper
-from imitation.rewards.serialize import load_reward
-from imitation.scripts.config.train_rl import train_rl_ex
-from imitation.scripts.ingredients import environment
-from imitation.scripts.ingredients import logging as logging_ingredient
-from imitation.scripts.ingredients import policy_evaluation, rl
+import imitation.src.imitation.data.serialize as data_serialize
+import imitation.src.imitation.policies.serialize as policies_serialize
+from imitation.src.imitation.data import rollout, wrappers
+from imitation.src.imitation.rewards.reward_wrapper import RewardVecEnvWrapper
+from imitation.src.imitation.rewards.serialize import load_reward
+from imitation.src.imitation.scripts.config.train_rl import train_rl_ex
+from imitation.src.imitation.scripts.ingredients import environment
+from imitation.src.imitation.scripts.ingredients import logging as logging_ingredient
+from imitation.src.imitation.scripts.ingredients import policy_evaluation, rl
 
 
 @train_rl_ex.main
