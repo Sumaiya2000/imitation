@@ -6,9 +6,9 @@ import torch as th
 from stable_baselines3.common import base_class, vec_env
 from torch.nn import functional as F
 
-from imitation.algorithms import base
-from imitation.algorithms.adversarial import common
-from imitation.rewards import reward_nets
+from imitation.src.imitation.algorithms import base
+from imitation.src.imitation.algorithms.adversarial import common
+from imitation.src.imitation.rewards import reward_nets
 
 
 class RewardNetFromDiscriminatorLogit(reward_nets.RewardNet):
